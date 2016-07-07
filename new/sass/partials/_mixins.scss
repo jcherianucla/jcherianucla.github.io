@@ -1,0 +1,44 @@
+// Cross web platform border radius
+@mixin border-radius($rad){
+	-webkit-border-radius: $rad;
+	-moz-border-radius: $rad;
+	-ms-border-radius: $rad;
+	-o-border-radius: $rad;
+	border-radius: $rad;
+}
+
+// Cross platform animation for definition
+@mixin animation($name, $time, $easing, $iter-count, $start-delay){
+	-webkit-animation: $name $time $easing $iter-count $start-delay;
+	-ms-animation: $name $time $easing $iter-count $start-delay;
+	-moz-animation: $name $time $easing $iter-count $start-delay;
+	-o-animation: $name $time $easing $iter-count $start-delay;
+	animation: $name $time $easing $iter-count $start-delay;
+}
+
+// Cross platform animation delay for definition
+@mixin animation-delay($time) {
+	-webkit-animation-delay: $time;
+	-moz-animation-delay: $time;
+	-ms-animation-delay: $time;
+	-o-animation-delay: $time;
+	animation-delay: $time;
+}
+
+// Cross platform translateY
+@mixin translateY($y){
+	-webkit-transform: translateY($y);
+	-moz-transform: translateY($y);
+	-ms-transform: translateY($y);
+	-o-transform: translateY($y);
+	transform: translateY($y);
+}
+
+// Cross platform translate
+@mixin translate($x, $y){
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-o-transform: translate($x, $y);
+	transform: translate($x, $y);
+}
