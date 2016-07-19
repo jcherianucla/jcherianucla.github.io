@@ -6,169 +6,112 @@ html, body {
   padding: 0;
 }
 
-/* line 14, ../sass/main.scss */
-.large-header {
-  position: fixed;
-  display: fixed;
-  width: 100%;
-  height: 100%;
-  background: #393939;
-  background-size: cover;
-  background-position: center center;
-  z-index: 1;
+/* line 12, ../sass/main.scss */
+h1 {
+  margin: 10px;
 }
-/* line 25, ../sass/main.scss */
-.large-header .content-box {
-  position: fixed;
-  width: 70%;
+
+/* line 16, ../sass/main.scss */
+.container {
+  font-family: "Nunito", sans-serif;
+  padding-left: 2%;
+}
+/* line 19, ../sass/main.scss */
+.container .intro-name {
   display: block;
-  height: 100%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  background: #222222;
+  color: #A9A9A9;
+  font-size: 40px;
+}
+/* line 24, ../sass/main.scss */
+.container .definition {
+  display: block;
+}
+/* line 27, ../sass/main.scss */
+.container .section {
+  position: relative;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  padding-left: 2%;
+  padding-top: 40px;
 }
 /* line 35, ../sass/main.scss */
-.large-header .content-box .welcome {
+.container .my_img {
+  margin: 0;
+  float: right;
+  right: 10%;
+  width: 30%;
+  height: 40%;
   position: relative;
-  font-family: "Roboto Slab";
-  font-weight: bold;
-  color: #A9A9A9;
-  text-align: center;
-  font-size: 6vw;
-  top: 10%;
-  margin: 0 auto;
+}
+/* line 44, ../sass/main.scss */
+.container .bio {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  width: 50%;
+  padding-left: 2%;
 }
 
-/* line 48, ../sass/main.scss */
-.verticalLine {
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  float: right;
-  right: 7%;
-  background-color: #A9A9A9;
+/* line 52, ../sass/main.scss */
+img {
+  margin: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
-/* line 57, ../sass/main.scss */
-.navigation {
-  position: absolute;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  color: #A9A9A9;
-  top: 30%;
-  right: 7%;
-}
-/* line 64, ../sass/main.scss */
-.navigation ul {
-  list-style-type: none;
-}
-/* line 71, ../sass/main.scss */
-.navigation .nav-tag {
-  display: inline-block;
-  width: 80%;
-}
-
-/* line 77, ../sass/main.scss */
-.nav-tag::after {
-  content: '';
-  display: inline-block;
-  text-align: center;
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  left: 10px;
-  background-color: #A9A9A9;
-}
-
-/* line 88, ../sass/main.scss */
-.u-vertical-line {
-  position: absolute;
-  width: 1px;
-  height: 30%;
-  float: right;
-  top: 0;
-  right: 7%;
-  background-color: #A9A9A9;
-}
-
-/* line 98, ../sass/main.scss */
-.d-vertical-line {
-  position: absolute;
-  width: 1px;
-  height: 30%;
-  bottom: 0;
-  float: right;
-  right: 7%;
-  background-color: #A9A9A9;
-}
-
-/* line 108, ../sass/main.scss */
-.definition {
-  display: inline-block;
-  text-align: center;
-  margin: 0 auto;
-}
-
-/* line 114, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .definition span {
   position: absolute;
-  font-family: "Roboto Slab";
+  padding-left: 2%;
+  font-family: "Nunito", sans-serif;
   font-weight: bold;
-  font-size: 5vw;
-  left: 0;
-  right: 0;
-  padding-top: 10%;
+  font-size: 30px;
   opacity: 0;
   overflow: hidden;
   color: #DF3939;
-  -webkit-animation: rotateDef 32s linear infinite 0s;
-  -ms-animation: rotateDef 32s linear infinite 0s;
-  -moz-animation: rotateDef 32s linear infinite 0s;
-  -o-animation: rotateDef 32s linear infinite 0s;
-  animation: rotateDef 32s linear infinite 0s;
+  -webkit-animation: rotateDef 15s linear infinite 0s;
+  -ms-animation: rotateDef 15s linear infinite 0s;
+  -moz-animation: rotateDef 15s linear infinite 0s;
+  -o-animation: rotateDef 15s linear infinite 0s;
+  animation: rotateDef 15s linear infinite 0s;
 }
 
-/* line 128, ../sass/main.scss */
-.intro-name {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  font-family: "Roboto Slab";
-  color: #A9A9A9;
-  font-weight: bold;
-  font-size: 6vw;
-  padding-top: 15%;
-}
-
-/* line 140, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .definition span:nth-child(2) {
-  -webkit-animation-delay: 8s;
-  -moz-animation-delay: 8s;
-  -ms-animation-delay: 8s;
-  -o-animation-delay: 8s;
-  animation-delay: 8s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .definition span:nth-child(3) {
-  -webkit-animation-delay: 16s;
-  -moz-animation-delay: 16s;
-  -ms-animation-delay: 16s;
-  -o-animation-delay: 16s;
-  animation-delay: 16s;
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .definition span:nth-child(4) {
-  -webkit-animation-delay: 24s;
-  -moz-animation-delay: 24s;
-  -ms-animation-delay: 24s;
-  -o-animation-delay: 24s;
-  animation-delay: 24s;
+  -webkit-animation-delay: 9s;
+  -moz-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  -o-animation-delay: 9s;
+  animation-delay: 9s;
+}
+
+/* line 74, ../sass/main.scss */
+.definition span:nth-child(5) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
 }
 
 @-webkit-keyframes rotateDef {
@@ -177,11 +120,11 @@ html, body {
   }
   2% {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   5% {
     opacity: 1;
@@ -201,11 +144,11 @@ html, body {
   }
   20% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
   80% {
     opacity: 0;
@@ -220,11 +163,11 @@ html, body {
   }
   2% {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   5% {
     opacity: 1;
@@ -244,11 +187,11 @@ html, body {
   }
   20% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
   80% {
     opacity: 0;
@@ -263,11 +206,11 @@ html, body {
   }
   2% {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   5% {
     opacity: 1;
@@ -287,11 +230,11 @@ html, body {
   }
   20% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
   80% {
     opacity: 0;
@@ -306,11 +249,11 @@ html, body {
   }
   2% {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   5% {
     opacity: 1;
@@ -330,11 +273,11 @@ html, body {
   }
   20% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
   80% {
     opacity: 0;
@@ -349,11 +292,11 @@ html, body {
   }
   2% {
     opacity: 0;
-    -webkit-transform: translateY(-30px);
-    -moz-transform: translateY(-30px);
-    -ms-transform: translateY(-30px);
-    -o-transform: translateY(-30px);
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   5% {
     opacity: 1;
@@ -373,11 +316,11 @@ html, body {
   }
   20% {
     opacity: 0;
-    -webkit-transform: translateY(30px);
-    -moz-transform: translateY(30px);
-    -ms-transform: translateY(30px);
-    -o-transform: translateY(30px);
-    transform: translateY(30px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
   80% {
     opacity: 0;
