@@ -47,8 +47,43 @@ h1 {
 		width: 50%;
 		padding-left: 2%;
 	}
+	
+	.bottom-nav{
+		position: fixed;
+		width: 100%;
+		left: 0px;
+		bottom: 20px;
+		border-bottom: 1px solid #000000;
+
+		.content {
+			display: inline;
+			text-align: center;
+		}
+	}
+}
+ul {
+	list-style: none;
+}
+li {
+	display: inline-block;
+	margin: 0 3% 0 3%;
+
+	.cross {
+		position: absolute;
+		background: white;
+		text-align: center;
+		margin: 0 -0.5% 0 -1%;
+		top: 40px;
+		width: 30px;
+	}
 }
 
+.nav_line{
+	display: block;
+	position: relative;
+	width: 100;
+	margin-left: 0;
+}
 img {
 	margin: 0;
 	width: auto;
