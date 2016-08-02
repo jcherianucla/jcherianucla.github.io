@@ -34,12 +34,11 @@ html {
 .container .section {
   position: relative;
   display: block;
-  padding-left: -2%;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   padding-top: 40px;
 }
-/* line 41, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .container .my_img {
   margin: 0;
   float: right;
@@ -48,14 +47,14 @@ html {
   height: 35%;
   position: relative;
 }
-/* line 50, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .container .bio {
   font-family: "Nunito", sans-serif;
   float: left;
   font-weight: 300;
   width: 50%;
 }
-/* line 57, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 .container .bottom-nav {
   position: fixed;
   width: 100%;
@@ -63,34 +62,33 @@ html {
   bottom: 20px;
   border-bottom: 1px solid #000000;
 }
-/* line 64, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .container .bottom-nav .content {
   display: inline;
   text-align: center;
 }
 
-/* line 73, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 ul {
   list-style: none;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 li {
   cursor: pointer;
   display: inline-block;
   margin: 0 3% 0 3%;
 }
-/* line 81, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 li .cross {
   position: absolute;
   background: white;
   text-align: center;
   margin: 0 -0.5% 0 -1%;
-  top: 40px;
   width: 30px;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .nav_line {
   display: block;
   position: relative;
@@ -98,7 +96,7 @@ li .cross {
   margin-left: 0;
 }
 
-/* line 97, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 img {
   margin: 0;
   width: auto;
@@ -107,7 +105,7 @@ img {
   max-height: 100%;
 }
 
-/* line 106, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 .definition span {
   position: absolute;
   font-family: "Nunito", sans-serif;
@@ -123,7 +121,7 @@ img {
   animation: rotateDef 15s linear infinite 0s;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .definition span:nth-child(2) {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
@@ -132,7 +130,7 @@ img {
   animation-delay: 3s;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .definition span:nth-child(3) {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -141,7 +139,7 @@ img {
   animation-delay: 6s;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .definition span:nth-child(4) {
   -webkit-animation-delay: 9s;
   -moz-animation-delay: 9s;
@@ -150,7 +148,7 @@ img {
   animation-delay: 9s;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .definition span:nth-child(5) {
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
