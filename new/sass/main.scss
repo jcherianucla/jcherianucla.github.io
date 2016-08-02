@@ -40,7 +40,7 @@ html {
 	.my_img{
 		margin: 0;
 		float: right;
-		right: 13%;
+		//right: 13%;
 		width: 30%;
 		height: 35%;
 		position: relative;
@@ -49,6 +49,7 @@ html {
 	.bio {
 		font-family: $title-font;
 		float: left;
+		padding-left: 15px;
 		font-weight: 300;
 		width: 50%;
 	}
