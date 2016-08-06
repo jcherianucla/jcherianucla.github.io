@@ -61,9 +61,25 @@ html {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 67, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
+.container .work-container .software #code {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: .2s ease-in-out;
+}
+/* line 77, ../sass/main.scss */
+.container .work-container .software #code:hover {
+  transform: scale(1.1);
+}
+/* line 82, ../sass/main.scss */
 .container .work-container .design {
-  float: left;
+  float: right;
   border: 1px solid #000000;
   height: 40vw;
   position: relative;
@@ -71,7 +87,23 @@ html {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 78, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
+.container .work-container .design #design {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transition: .2s ease-in-out;
+}
+/* line 101, ../sass/main.scss */
+.container .work-container .design #design:hover {
+  transform: scale(1.1);
+}
+/* line 107, ../sass/main.scss */
 .container .bottom-nav {
   position: fixed;
   width: 100%;
@@ -81,24 +113,24 @@ html {
   bottom: 20px;
   border-bottom: 1px solid #000000;
 }
-/* line 87, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 .container .bottom-nav .content {
   display: inline;
   text-align: center;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 ul {
   list-style: none;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 li {
   cursor: pointer;
   display: inline-block;
   margin: 0 3% 0 3%;
 }
-/* line 101, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 li .cross {
   display: block;
   position: absolute;
@@ -108,7 +140,7 @@ li .cross {
   width: 30px;
 }
 
-/* line 111, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .nav_line {
   display: block;
   position: relative;
@@ -116,7 +148,7 @@ li .cross {
   margin-left: 0;
 }
 
-/* line 117, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 img {
   margin: 0;
   width: auto;
@@ -125,7 +157,7 @@ img {
   max-height: 100%;
 }
 
-/* line 126, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
 .definition span {
   position: absolute;
   font-family: "Nunito", sans-serif;
@@ -141,7 +173,7 @@ img {
   animation: rotateDef 15s linear infinite 0s;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .definition span:nth-child(2) {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
@@ -150,7 +182,7 @@ img {
   animation-delay: 3s;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .definition span:nth-child(3) {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -159,7 +191,7 @@ img {
   animation-delay: 6s;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .definition span:nth-child(4) {
   -webkit-animation-delay: 9s;
   -moz-animation-delay: 9s;
@@ -168,7 +200,7 @@ img {
   animation-delay: 9s;
 }
 
-/* line 138, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .definition span:nth-child(5) {
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;

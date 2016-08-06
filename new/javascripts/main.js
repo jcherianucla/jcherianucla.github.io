@@ -17,5 +17,9 @@ $(document).ready(function(){
 		$(".work-container").fadeOut();
 		$(".abt-container").fadeIn();
 	})
+	$("#code").hover(function(){
+		effect: "scale";
+		direction:"horizontal";
+	})
 
 });

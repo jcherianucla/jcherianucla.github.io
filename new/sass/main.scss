@@ -62,16 +62,45 @@ html {
 			display: block;
 			margin-top: 50px;
 			margin-bottom: 50px;
+			#code{
+				cursor: pointer;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				transition: .2s ease-in-out;
+
+			}
+			#code:hover{
+				transform: scale(1.1);
+			}
 		}
 
 		.design {
-			float: left;
+			float: right;
 			border: 1px solid #000000;
 			height: 40vw;
 			position: relative;
 			display: block;
 			margin-top: 50px;
 			margin-bottom: 50px;
+			#design{
+				cursor:pointer;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				transition: .2s ease-in-out;
+			}
+			#design:hover{
+				transform: scale(1.1);
+			}
 		}
 	}
 
