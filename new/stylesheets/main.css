@@ -54,7 +54,6 @@ html {
 /* line 57, ../sass/main.scss */
 .container .work-container .software {
   float: left;
-  border: 1px solid #000000;
   height: 40vw;
   position: relative;
   display: block;
@@ -80,10 +79,9 @@ html {
 /* line 82, ../sass/main.scss */
 .container .work-container .design {
   float: right;
-  border: 1px solid #000000;
   height: 40vw;
   position: relative;
-  display: block;
+  display: inline-block;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -149,7 +147,7 @@ li .cross {
 }
 
 /* line 146, ../sass/main.scss */
-img {
+#jahan {
   margin: 0;
   width: auto;
   height: auto;

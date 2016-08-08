@@ -18,8 +18,10 @@ $(document).ready(function(){
 		$(".abt-container").fadeIn();
 	});
 	$("#code").click(function(){
-		$(".software").animate({ width: '+= 10%'}, 10);
-		$(".desgin").animate({ width: '-=10%'}, 10);
+		$(".software").removeClass("col-xs-6");
+		$(".design").removeClass("col-xs-6");
+		$(".software").css("width", "80%");
+		$(".desgin").css("width", "20%");
 	});
 
 });
