@@ -11,7 +11,7 @@ html, body {
 }
 
 html {
-//	background-image: url("../images/bg_about.png") no-repeat center center fixed;
+	//	background-image: url("../images/bg_about.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -62,6 +62,46 @@ html {
 			display: block;
 			margin-top: 50px;
 			margin-bottom: 50px;
+			.multi-item-carousel{
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				.carousel-inner{
+					> .item{
+						transition: 500ms ease-in-out left;
+					}
+					.active{
+						&.left{
+							left:-33%;
+						}
+						&.right{
+							left:33%;
+						}
+					}
+					.next{
+						left: 33%;
+					}
+					.prev{
+						left: -33%;
+					}
+					@media all and (transform-3d), (-webkit-transform-3d) {
+						> .item{
+							// use your favourite prefixer here
+							transition: 500ms ease-in-out all;
+							backface-visibility: visible;
+							transform: none!important;
+						}
+					}
+				}
+				.carouse-control{
+					&.left, &.right{
+						background-image: none;
+					}
+				}
+			}
 			#code{
 				cursor: pointer;
 				display: block;
