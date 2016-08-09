@@ -111,10 +111,12 @@ html {
 		padding: 0;
 		background: white;
 		left: 0px;
-		height: 30px;
+		bottom: 0;
+		//height: px;
 		z-index: 0;
 		.bottom-nav{
 			z-index: 1;
+			background: white;
 			bottom: 20px;
 			border-bottom: 1px solid #000000;
 
