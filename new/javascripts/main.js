@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	$('.projects').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3
+  	});
+	$('.projects').hide();
 	$("#w-x").hide();
 	$("#n-x").hide();
 	$("#c-x").hide();
@@ -22,6 +28,7 @@ $(document).ready(function(){
 		$(".design").removeClass("col-xs-6");
 		$(".software").css("width", "90%");
 		$("#code").hide();
+		$('.projects').show();
 		$(".design").css("width", "10%");
 	});
 
