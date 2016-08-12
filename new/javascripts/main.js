@@ -1,9 +1,4 @@
 $(document).ready(function(){
-	$('.projects').slick({
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 3
-  	});
 	$('.projects').hide();
 	$("#w-x").hide();
 	$("#n-x").hide();

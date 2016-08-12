@@ -14,22 +14,24 @@ html {
   background-size: cover;
 }
 
-/* line 22, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .container {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding-left: 2%;
 }
-/* line 25, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 .container .intro-name {
+  font-family: "Nunito", sans-serif;
   display: block;
   color: #A9A9A9;
   font-size: 40px;
 }
 /* line 30, ../sass/main.scss */
 .container .definition {
+  font-family: "Nunito", sans-serif;
   display: block;
 }
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .container .abt-container .section {
   position: relative;
   display: block;
@@ -37,21 +39,20 @@ html {
   font-weight: 300;
   padding-top: 40px;
 }
-/* line 41, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .container .abt-container .my_img {
   float: right;
   height: 50vw;
   position: relative;
 }
-/* line 47, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .container .abt-container .bio {
-  font-family: "Nunito", sans-serif;
   float: left;
   margin: 0;
   padding-left: 15px;
   font-weight: 300;
 }
-/* line 58, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .container .work-container .software {
   float: left;
   border-right: 0.5px solid #D8D8D8;
@@ -62,13 +63,39 @@ html {
   margin-bottom: 50px;
   text-align: center;
 }
-/* line 67, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .container .work-container .software .projects {
-  display: inline-block;
+  display: block;
   margin: 0;
-  width: 80%;
 }
-/* line 73, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
+.container .work-container .software .projects .project-container {
+  display: table;
+  content: " ";
+}
+/* line 74, ../sass/main.scss */
+.container .work-container .software .projects .project-container .projectCell {
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px;
+  transition: .2s ease-in-out;
+}
+/* line 79, ../sass/main.scss */
+.container .work-container .software .projects .project-container .projectCell .projectContent:hover {
+  transform: scale(1.1);
+}
+/* line 83, ../sass/main.scss */
+.container .work-container .software .projects .project-container .description {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+  color: #444;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/* line 95, ../sass/main.scss */
 .container .work-container .software #code {
   cursor: pointer;
   display: block;
@@ -80,11 +107,11 @@ html {
   margin: auto;
   transition: .2s ease-in-out;
 }
-/* line 85, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .container .work-container .software #code:hover {
   transform: scale(1.1);
 }
-/* line 90, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .container .work-container .design {
   float: right;
   height: 40vw;
@@ -93,7 +120,7 @@ html {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 98, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .container .work-container .design #design {
   cursor: pointer;
   display: block;
@@ -105,11 +132,11 @@ html {
   margin: auto;
   transition: .2s ease-in-out;
 }
-/* line 109, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .container .work-container .design #design:hover {
   transform: scale(1.1);
 }
-/* line 115, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .container .nav-bg {
   position: fixed;
   margin: 0;
@@ -120,31 +147,31 @@ html {
   opacity: 0.95;
   z-index: 0;
 }
-/* line 124, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .container .nav-bg .bottom-nav {
   z-index: 1;
   background: white;
   bottom: 20px;
   border-bottom: 1px solid #000000;
 }
-/* line 130, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 .container .nav-bg .bottom-nav .content {
   display: inline;
   text-align: center;
 }
 
-/* line 137, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 ul {
   list-style: none;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 li {
   cursor: pointer;
   display: inline-block;
   margin: 0 3% 0 3%;
 }
-/* line 145, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 li .cross {
   display: block;
   position: absolute;
@@ -154,7 +181,7 @@ li .cross {
   width: 30px;
 }
 
-/* line 155, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 .nav_line {
   display: block;
   position: relative;
@@ -162,7 +189,7 @@ li .cross {
   margin-left: 0;
 }
 
-/* line 161, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 #jahan {
   margin: 0;
   width: auto;
@@ -171,7 +198,7 @@ li .cross {
   max-height: 100%;
 }
 
-/* line 170, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .definition span {
   position: absolute;
   font-family: "Nunito", sans-serif;
@@ -187,7 +214,7 @@ li .cross {
   animation: rotateDef 15s linear infinite 0s;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .definition span:nth-child(2) {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
@@ -196,7 +223,7 @@ li .cross {
   animation-delay: 3s;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .definition span:nth-child(3) {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -205,7 +232,7 @@ li .cross {
   animation-delay: 6s;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .definition span:nth-child(4) {
   -webkit-animation-delay: 9s;
   -moz-animation-delay: 9s;
@@ -214,7 +241,7 @@ li .cross {
   animation-delay: 9s;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .definition span:nth-child(5) {
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
