@@ -32,17 +32,12 @@ html {
 		display: block;
 	}
 	.abt-container {
-		.section {
-			position: relative;
-			display:block;
-			font-family: $body-font;
-			font-weight: 300;
-			padding-top: 40px;
-		}
 		.my_img{
 			float: right;
 			height: 50vw;
 			position: relative;
+			top: 50%;
+			transform: translateY(-20%);
 		}
 
 		.bio {
@@ -53,6 +48,14 @@ html {
 			font-weight: 300;
 		}
 	}
+	.section {
+		padding-left: -2%;
+		position: relative;
+		display:block;
+		font-family: $body-font;
+		font-weight: 300;
+		padding-top: 40px;
+	}
 
 	.work-container {
 
@@ -61,7 +64,7 @@ html {
 			border-right: 0.5px solid #D8D8D8;
 			height: 40vw;
 			position: relative;
-			display: block;
+			//display: block;
 			margin-top: 50px;
 			margin-bottom: 50px;
 			text-align: center;
@@ -181,7 +184,6 @@ li {
 	margin-left: 0;
 }
 #jahan {
-	margin: 0;
 	width: auto;
 	height: auto;
 	max-width: 100%;
