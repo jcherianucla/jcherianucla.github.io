@@ -51,7 +51,7 @@ html {
 	.section {
 		padding-left: -2%;
 		position: relative;
-		display:block;
+		display: inline-block;
 		font-family: $body-font;
 		font-weight: 300;
 		padding-top: 40px;
@@ -61,10 +61,10 @@ html {
 
 		.software{
 			float: left;
-			border-right: 0.5px solid #D8D8D8;
+			//border-right: 0.5px solid #D8D8D8;
 			height: 40vw;
 			position: relative;
-			//display: block;
+			display: block;
 			margin-top: 50px;
 			margin-bottom: 50px;
 			text-align: center;
@@ -76,7 +76,8 @@ html {
 					content: " ";
 					.projectCell{
 						cursor: pointer;
-						font-weight: 400;
+						font-weight: bold;
+						font-size: large;
 						padding: 10px;
 						transition: .2s ease-in-out;
 						.projectContent:hover{
@@ -90,6 +91,7 @@ html {
 						padding-bottom: 10px;
 						color: #444;
 						margin-top: 10px;
+						font-weight: lighter;
 						font-size: 14px;
 						line-height: 1.8;
 					}
