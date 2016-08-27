@@ -7,6 +7,9 @@ $(document).ready(function(){
 	$(".work-container").hide();
 	$(".work").click(function(){
 		//$("html").css('background', 'url(images/bg_work.png) no-repeat center center fixed');
+		$("#current_section").fadeOut(500, function(){
+			$(this).text("Work").fadeIn(500);
+		});
 		$(".abt-container").fadeOut();
 		$(".work-container").fadeIn();
 		$("#a-x").hide();
@@ -14,6 +17,9 @@ $(document).ready(function(){
 	});
 	$(".about").click(function(){
 		//$("html").css('background', 'url(images/bg_about.png) no-repeat center center fixed');
+		$("#current_section").fadeOut(500, function(){
+			$(this).text("About").fadeIn(500);
+		});
 		$("#w-x").hide();
 		$("#a-x").fadeIn();
 		$(".work-container").fadeOut();

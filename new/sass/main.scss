@@ -22,8 +22,6 @@ html {
 	font-family: $body-font;
 	display: flex;
 	flex-flow: row wrap;
-	margin: 0;
-	padding-left: 2%;
 	.intro-name {
 		flex: 0 1 100%;
 		padding-top: 10px;
@@ -44,8 +42,6 @@ html {
 		align-items: flex-start;
 		.my_img{
 			justify-content: center;
-			float: right;
-			//height: 50vw;
 			height: 500px;
 			position: relative;
 			top: 50%;
@@ -71,7 +67,8 @@ html {
 	}
 
 	.work-container {
-
+		flex-flow: row nowrap;
+		flex: 0 1 100%;
 		.software{
 			float: left;
 			//border-right: 0.5px solid #D8D8D8;
@@ -184,7 +181,7 @@ html {
 	}
 
 	.nav-bg{
-		display: flex;
+		display: block;
 		flex: 0 1 100%;
 		position: fixed;
 		margin: 0;
