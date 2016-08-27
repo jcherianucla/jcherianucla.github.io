@@ -17,46 +17,60 @@ html {
 /* line 21, ../sass/main.scss */
 .container {
   font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
   padding-left: 2%;
 }
-/* line 24, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .container .intro-name {
+  flex: 0 1 100%;
   padding-top: 10px;
   font-family: "Nunito", sans-serif;
   display: block;
   color: #A9A9A9;
   font-size: 40px;
 }
-/* line 31, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .container .definition {
+  flex: 0 1 100%;
+  height: 40px;
   font-family: "Nunito", sans-serif;
   display: block;
 }
-/* line 36, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
+.container .abt-container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-items: flex-start;
+}
+/* line 45, ../sass/main.scss */
 .container .abt-container .my_img {
+  justify-content: center;
   float: right;
-  height: 50vw;
+  height: 500px;
   position: relative;
   top: 50%;
-  transform: translateY(-20%);
+  transform: translateY(-10%);
 }
-/* line 44, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .container .abt-container .bio {
   float: left;
   margin: 0;
   padding-left: 15px;
   font-weight: 300;
 }
-/* line 52, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 .container .section {
+  flex: 0 1 100%;
   padding-left: -2%;
   position: relative;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  padding-top: 40px;
+  margin-top: 10px;
 }
-/* line 63, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .container .work-container .software {
   float: left;
   height: 40vw;
@@ -66,17 +80,17 @@ html {
   margin-bottom: 50px;
   text-align: center;
 }
-/* line 72, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .container .work-container .software .projects {
   display: block;
   margin: 0;
 }
-/* line 75, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .container .work-container .software .projects .project-container {
   display: table;
   content: " ";
 }
-/* line 78, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 .container .work-container .software .projects .project-container .projectCell {
   cursor: pointer;
   font-weight: bold;
@@ -84,11 +98,11 @@ html {
   padding: 10px;
   transition: .2s ease-in-out;
 }
-/* line 84, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .container .work-container .software .projects .project-container .projectCell .projectContent:hover {
   transform: scale(1.1);
 }
-/* line 88, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .container .work-container .software .projects .project-container .description {
   width: 80%;
   text-align: center;
@@ -100,7 +114,7 @@ html {
   font-size: 14px;
   line-height: 1.8;
 }
-/* line 101, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .container .work-container .software #code {
   cursor: pointer;
   display: block;
@@ -112,11 +126,11 @@ html {
   margin: auto;
   transition: .2s ease-in-out;
 }
-/* line 113, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .container .work-container .software #code:hover {
   transform: scale(1.1);
 }
-/* line 116, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .container .work-container .software .project-info {
   display: block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -124,33 +138,33 @@ html {
   width: 100%;
   height: 100%;
 }
-/* line 122, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .container .work-container .software .project-info .project-content {
   height: 100%;
 }
-/* line 124, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .container .work-container .software .project-info .project-content .proj-image {
   width: 100%;
 }
-/* line 129, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .container .work-container .software .project-info .project-information .cancel {
   cursor: pointer;
   position: relative;
   width: 100%;
   height: 30px;
 }
-/* line 135, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .container .work-container .software .project-info .project-information .project-title {
   font-weight: bold;
   position: relative;
   text-align: center;
 }
-/* line 141, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .container .work-container .software .project-info .project-information .proj-description-detail {
   text-align: left;
   position: relative;
 }
-/* line 149, ../sass/main.scss */
+/* line 161, ../sass/main.scss */
 .container .work-container .design {
   float: right;
   height: 40vw;
@@ -159,7 +173,7 @@ html {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 157, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .container .work-container .design #design {
   cursor: pointer;
   display: block;
@@ -171,12 +185,14 @@ html {
   margin: auto;
   transition: .2s ease-in-out;
 }
-/* line 168, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .container .work-container .design #design:hover {
   transform: scale(1.1);
 }
-/* line 174, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .container .nav-bg {
+  display: flex;
+  flex: 0 1 100%;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -186,31 +202,32 @@ html {
   opacity: 0.95;
   z-index: 0;
 }
-/* line 183, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .container .nav-bg .bottom-nav {
+  flex: 0 1 100%;
   z-index: 1;
   background: white;
   bottom: 20px;
   border-bottom: 1px solid #000000;
 }
-/* line 189, ../sass/main.scss */
+/* line 204, ../sass/main.scss */
 .container .nav-bg .bottom-nav .content {
   display: inline;
   text-align: center;
 }
 
-/* line 196, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 ul {
   list-style: none;
 }
 
-/* line 199, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 li {
   cursor: pointer;
   display: inline-block;
   margin: 0 3% 0 3%;
 }
-/* line 204, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 li .cross {
   display: block;
   position: absolute;
@@ -220,7 +237,7 @@ li .cross {
   width: 30px;
 }
 
-/* line 214, ../sass/main.scss */
+/* line 229, ../sass/main.scss */
 .nav_line {
   display: block;
   position: relative;
@@ -228,7 +245,7 @@ li .cross {
   margin-left: 0;
 }
 
-/* line 220, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 #jahan {
   width: auto;
   height: auto;
@@ -236,7 +253,7 @@ li .cross {
   max-height: 100%;
 }
 
-/* line 228, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 .definition span {
   position: absolute;
   font-family: "Nunito", sans-serif;
@@ -252,7 +269,7 @@ li .cross {
   animation: rotateDef 15s linear infinite 0s;
 }
 
-/* line 240, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .definition span:nth-child(2) {
   -webkit-animation-delay: 3s;
   -moz-animation-delay: 3s;
@@ -261,7 +278,7 @@ li .cross {
   animation-delay: 3s;
 }
 
-/* line 240, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .definition span:nth-child(3) {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -270,7 +287,7 @@ li .cross {
   animation-delay: 6s;
 }
 
-/* line 240, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .definition span:nth-child(4) {
   -webkit-animation-delay: 9s;
   -moz-animation-delay: 9s;
@@ -279,7 +296,7 @@ li .cross {
   animation-delay: 9s;
 }
 
-/* line 240, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .definition span:nth-child(5) {
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
