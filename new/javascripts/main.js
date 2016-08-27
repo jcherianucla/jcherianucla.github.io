@@ -1,13 +1,16 @@
 $(document).ready(function(){
+	var distance = Math.abs($('.abt-container').offset().top - $('.bottom-nav').offset().top);
 	$('.projects').hide();
 	$("#w-x").hide();
 	$("#n-x").hide();
 	$("#c-x").hide();
 	$(".project-info").hide();
+	$(".abt-container").css("height", distance);
+	$(".work-container").css("height", distance);
 	$(".work-container").hide();
 	$(".work").click(function(){
-		//$("html").css('background', 'url(images/bg_work.png) no-repeat center center fixed');
 		$("#current_section").fadeOut(500, function(){
+			$(this).css("color", "#7ED321");
 			$(this).text("Work").fadeIn(500);
 		});
 		$(".abt-container").fadeOut();
@@ -16,7 +19,6 @@ $(document).ready(function(){
 		$("#w-x").fadeIn();
 	});
 	$(".about").click(function(){
-		//$("html").css('background', 'url(images/bg_about.png) no-repeat center center fixed');
 		$("#current_section").fadeOut(500, function(){
 			$(this).text("About").fadeIn(500);
 		});
