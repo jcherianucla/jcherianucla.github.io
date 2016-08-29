@@ -43,15 +43,13 @@ html {
 		flex-flow: row-reverse nowrap;
 		align-items: flex-start;
 		.my_img{
-			//justify-content: center;
-			height: 500px;
+			height: 520px;
 			position: relative;
-			top: 20px;
+			top: 30px;
 			transform: translateY(-10%);
 		}
 
 		.bio {
-			//font-family: $title-font;
 			float: left;
 			margin: 0;
 			padding-left: 15px;
@@ -70,18 +68,21 @@ html {
 
 	.work-container {
 		margin-bottom: 50px;
-		overflow-y: auto;
 		flex-flow: row nowrap;
 		flex: 0 1 100%;
 		.software{
+			overflow-y: auto;
 			float: left;
 			height: 40vw;
 			position: relative;
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			text-align: center;
 			.projects{
 				display: block;
 				margin: 0;
+				align-self: flex-start;
 				.project-container{
 					display: table;
 					content: " ";
@@ -112,11 +113,6 @@ html {
 				cursor: pointer;
 				display: block;
 				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				margin: auto;
 				transition: .2s ease-in-out;
 
 			}
@@ -160,16 +156,13 @@ html {
 			float: right;
 			height: 40vw;
 			position: relative;
-			display: inline-block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			#design{
 				cursor:pointer;
 				display: block;
 				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				margin: auto;
 				transition: .2s ease-in-out;
 			}
 			#design:hover{
