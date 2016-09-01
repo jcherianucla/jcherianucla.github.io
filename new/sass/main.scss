@@ -2,6 +2,15 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+@font-face{
+	font-family: default-font;
+	src: url(../AvenirLTStd-Light.otf);
+}
+@font-face{
+	font-family: default-font;
+	src: url(../AvenirLTStd-Roman.otf);
+	font-weight: bold;
+}
 // For the HTML and Body
 html, body {
 	width: 100%;
@@ -11,8 +20,9 @@ html, body {
 }
 
 .container {
+	font-family: default-font;
 	display: flex;
-	flex-flow: row;
+	flex-flow: column;
 	.upper-nav {
 		width: 100%;
 		background: white;
@@ -33,17 +43,53 @@ html, body {
 				border-bottom: 1px solid #e6e9eb;
 				.contains {
 					display: flex;
-					width: 50%;
+					width: 40%;
 					justify-content: center;
 					flex-flow: row;
 					.items {
 						display: flex;
 						justify-content: center;
 						img{
-							height: 40%;
-							width: 60%;
+							display: block;
+							margin: auto;
+							height: 30%;
+							width: 45%;
 						}
 					}
+				}
+			}
+		}
+	}
+	.main-content {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		.about {
+			width: 80%;
+			line-height: 1.7em;
+		}
+	}
+	.footer {
+		display: block;
+		position: relative;
+		bottom: 0;
+		width: 100%;
+		background: white;
+		justify-content: center;
+		.social-container {
+			display: flex;
+			height: 80px;
+			justify-content: center;
+			flex-flow: row;
+			border-top: 1px solid #e6e9eb;
+			.icons {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				img {
+					display: block;
+					margin: auto;
+					width: 40%;
 				}
 			}
 		}
