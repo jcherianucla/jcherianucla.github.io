@@ -20,6 +20,7 @@ html, body {
 }
 
 .container {
+	height:100%;
 	font-family: default-font;
 	display: flex;
 	flex-flow: column;
@@ -65,13 +66,16 @@ html, body {
 		position: relative;
 		justify-content: center;
 		.about {
+			height: 100%;
 			width: 80%;
+			padding-bottom: 80px;
 			line-height: 1.7em;
 		}
 	}
 	.footer {
-		display: block;
-		position: relative;
+		position: absolute;
+		height: 80px;
+		left: 0;
 		bottom: 0;
 		width: 100%;
 		background: white;

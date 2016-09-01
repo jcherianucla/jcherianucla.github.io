@@ -17,74 +17,78 @@ html, body {
 
 /* line 22, ../sass/main.scss */
 .container {
+  height: 100%;
   font-family: default-font;
   display: flex;
   flex-flow: column;
 }
-/* line 26, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .container .upper-nav {
   width: 100%;
   background: white;
   justify-content: center;
   align-items: center;
 }
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .container .upper-nav .my-logo {
   display: flex;
   justify-content: center;
 }
-/* line 36, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .container .upper-nav .nav-container {
   width: 100%;
   display: flex;
   flex-flow: column;
 }
-/* line 40, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #e6e9eb;
 }
-/* line 44, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains {
   display: flex;
   width: 40%;
   justify-content: center;
   flex-flow: row;
 }
-/* line 49, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items {
   display: flex;
   justify-content: center;
 }
-/* line 52, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items img {
   display: block;
   margin: auto;
   height: 30%;
   width: 45%;
 }
-/* line 63, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .container .main-content {
   display: flex;
   position: relative;
   justify-content: center;
 }
-/* line 67, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .container .main-content .about {
+  height: 100%;
   width: 80%;
+  padding-bottom: 80px;
   line-height: 1.7em;
 }
-/* line 72, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 .container .footer {
-  display: block;
-  position: relative;
+  position: absolute;
+  height: 80px;
+  left: 0;
   bottom: 0;
   width: 100%;
   background: white;
   justify-content: center;
 }
-/* line 79, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .container .footer .social-container {
   display: flex;
   height: 80px;
@@ -92,13 +96,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 85, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .container .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 89, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .container .footer .social-container .icons img {
   display: block;
   margin: auto;
