@@ -10,14 +10,17 @@
 		<meta property="og:type" content="blog">
 		<title> Jahan Cherian's Website </title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="javascript/main.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="upper-nav">
 				<div class="my-logo">
 					<span class="main-logo">
-						<a href="#about">
+						<a href="#about" onclick="return false">
 							<img src="images/logo.png" >
 						</a>
 					</span>
@@ -25,32 +28,46 @@
 				<div class="nav-container">
 					<div class="nav-bar"> 
 						<div class="contains"> 
-							<div class="items"> 
-								<a href="#about">
+							<div onclick="changeContent(event)" class="items"> 
+								<a href="#about" onclick="return false">
 									<img class="off" src="images/about_img_off.png">
 									<img class="on" src="images/about_img.png">
 								</a>
 							</div>
-							<div class="items">
-								<a href="/">
+							<div onclick="changeContent(event)" class="items">
+								<a href="#work" onclick="return false">
 									<img class="off" src="images/work_img_off.png">
 									<img class="on" src="images/work_img.png">
 								</a>
 							</div>
-							<div class="items">
+							<div onclick="changeContent(event)" class="items">
 								<a href="/">
 									<img class="off" src="images/notes_img_off.png">
 									<img class="on" src="images/notes_img.png">
 								</a>
 							</div>
-							<div class="items">
+							<div onclick="changeContent(event)" class="items">
 								<a href="/">
 									<img class="off" src="images/contact_img_off.png">
 									<img class="on" src="images/contact_img.png">
 								</a>
 							</div>
 						</div>
-					</div>	
+						<div class="work-contains">
+							<div class="items">
+								<a href="#code">
+									<img class="off" src="images/code_img_off.png">
+									<img class="on" src="images/code_img.png">
+								</a>
+							</div>
+							<div class="items">
+								<a href="#design">
+									<img class="off" src="images/design_img_off.png">
+									<img class="on" src="images/design_img.png">
+								</a>
+							</div>
+						</div>	
+					</div>
 				</div>
 			</div>
 			<div class="main-content">
@@ -71,41 +88,93 @@
 					If you have reached the end of this brief description of me as a person, then I assume you are interested in working with me or meeting me. If so feel free to explore my work and resume, browse my publicly available notes, and reach out to me through any of my social profiles so that we can do great things together!
 					</p>
 				</div>
-			</div>
-			<div class="footer">
-				<div class="social-container">
-					<div class="icons">
-						<a href="https://www.facebook.com/jahan.cherian" target="_blank">
-							<img class="social-icons" src="images/fb.png">
-						</a>
+				<div id="work" class="work">
+					<div class="work-text">
+						<p> This is where some information about my work life goes </p>
 					</div>
-					<div class="icons">
-						<a href="https://www.linkedin.com/in/jahancherian" target="_blank">
-							<img class="social-icons" src="images/linkedin.png">
-						</a>
-					</div>
-					<div class="icons">
-						<a href="https://github.com/jcherianucla" target="_blank">
-							<img class="social-icons" src="images/github.png">
-						</a>
-					</div>
-					<div class="icons">
-						<a href="https://www.instagram.com/jahancherian/" target="_blank">
-							<img class="social-icons" src="images/insta.png">
-						</a>
-					</div>
-					<div class="icons">
-						<a href="mailto:jcherian@g.ucla.edu?Subject=Getting%20in%20touch" target="_top">
-							<img class="social-icons" src="images/mail.png">
-						</a>
-					</div>
-					<div class="icons">
-						<a href="../Jahan Kuruvilla Cherian Resume.pdf" target="_blank">
-							<img class="social-icons" src="images/resume.png">
-						</a>
+					<div class="projects row">
+						<div class="project-container">
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Future Without Borders </h5>
+								<div class="projectContent">
+									<img src="images/FWB.png" alt="Future Without Borders">
+								</div>
+								<p class="description"> Helping connect humans for humans </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Lighthouse </h5>
+								<div class="projectContent">
+									<img src="images/Lighthouse.png" alt="Lighthouse">
+								</div>
+								<p class="description"> Changing safety one click at a time </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Stitch</h5>
+								<div class="projectContent">
+									<img src="images/Stitch.png" alt="Stitch">
+								</div>
+								<p class="description"> Filters on LSD </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Quotebook </h5>
+								<div class="projectContent">
+									<img src="images/Quotebook.png" alt="Quotebook">
+								</div>
+								<p class="description"> Remember your loved ones like never before </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Scavenger </h5>
+								<div class="projectContent">
+									<img src="images/Scavenger.png" alt="Scavenger">
+								</div>
+								<p class="description"> Leave messages on maps for others to find </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> BrainSpace VR</h5>
+								<div class="projectContent">
+									<img src="images/BrainSpace.png" alt="BrainSpace VR">
+								</div>
+								<p class="description"> See and feel the brain like never before </p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-				<script src="javascript/main.js"></script>
+			</div>
+			<div class="footer-wrapper">
+				<div class="footer">
+					<div class="social-container">
+						<div class="icons">
+							<a href="https://www.facebook.com/jahan.cherian" target="_blank">
+								<img class="social-icons" src="images/fb.png">
+							</a>
+						</div>
+						<div class="icons">
+							<a href="https://www.linkedin.com/in/jahancherian" target="_blank">
+								<img class="social-icons" src="images/linkedin.png">
+							</a>
+						</div>
+						<div class="icons">
+							<a href="https://github.com/jcherianucla" target="_blank">
+								<img class="social-icons" src="images/github.png">
+							</a>
+						</div>
+						<div class="icons">
+							<a href="https://www.instagram.com/jahancherian/" target="_blank">
+								<img class="social-icons" src="images/insta.png">
+							</a>
+						</div>
+						<div class="icons">
+							<a href="mailto:jcherian@g.ucla.edu?Subject=Getting%20in%20touch" target="_top">
+								<img class="social-icons" src="images/mail.png">
+							</a>
+						</div>
+						<div class="icons">
+							<a href="../Jahan Kuruvilla Cherian Resume.pdf" target="_blank">
+								<img class="social-icons" src="images/resume.png">
+							</a>
+						</div>
+					</div>
+				</div>
+				<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 </html>
