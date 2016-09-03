@@ -37,32 +37,37 @@ html, body {
   display: flex;
   justify-content: center;
 }
-/* line 40, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
+.container .upper-nav .my-logo img {
+  width: 209px;
+  height: 329px;
+}
+/* line 44, ../sass/main.scss */
 .container .upper-nav .nav-container {
   width: 100%;
   display: flex;
   flex-flow: column;
 }
-/* line 44, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
 }
-/* line 49, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains {
   display: flex;
   width: 50%;
   justify-content: center;
   flex-flow: row;
 }
-/* line 54, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items {
   display: flex;
   justify-content: center;
 }
-/* line 57, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .contains .items img {
   pointer-events: none;
   display: block;
@@ -70,42 +75,42 @@ html, body {
   height: 30%;
   width: 45%;
 }
-/* line 66, ../sass/main.scss */
+/* line 70, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains {
-  margin-right: 11%;
+  margin-right: 13%;
   width: 20%;
   display: flex;
   justify-content: center;
   flex-flow: row;
 }
-/* line 72, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains .items {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
-/* line 76, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains .items img {
   display: block;
   margin: auto;
   height: 30%;
   width: 45%;
 }
-/* line 87, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .container .main-content {
   display: flex;
   position: relative;
   justify-content: center;
   line-height: 1.7em;
 }
-/* line 92, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .container .main-content .about {
   height: 100%;
   width: 80%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 98, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .container .main-content .work {
   height: 100%;
   width: 80%;
@@ -117,17 +122,17 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 108, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .container .main-content .work .projects {
   display: block;
   align-self: flex-start;
 }
-/* line 111, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 .container .main-content .work .projects .project-container {
   display: table;
   content: " ";
 }
-/* line 114, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .container .main-content .work .projects .project-container .projectCell {
   cursor: pointer;
   font-weight: bold;
@@ -135,11 +140,11 @@ html, body {
   padding: 10px;
   transition: .2s ease-in-out;
 }
-/* line 120, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 .container .main-content .work .projects .project-container .projectCell .projectContent:hover {
   transform: scale(1.1);
 }
-/* line 124, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .container .main-content .work .projects .project-container .description {
   width: 80%;
   text-align: center;
@@ -151,7 +156,28 @@ html, body {
   font-size: 14px;
   line-height: 1.8;
 }
-/* line 139, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
+.container .main-content .notes {
+  height: 100%;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+/* line 151, ../sass/main.scss */
+.container .main-content .notes .projectCell {
+  font-weight: bold;
+  font-size: large;
+}
+/* line 156, ../sass/main.scss */
+.container .main-content .notes .projectContent img {
+  width: 200px;
+  height: 200px;
+}
+/* line 163, ../sass/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -159,7 +185,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 145, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -169,7 +195,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 153, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -177,13 +203,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 159, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 163, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;

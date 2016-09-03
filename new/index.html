@@ -41,7 +41,7 @@
 								</a>
 							</div>
 							<div onclick="changeContent(event)" class="items">
-								<a href="/">
+								<a href="#notes" onclick="return false">
 									<img class="off" src="images/notes_img_off.png">
 									<img class="on" src="images/notes_img.png">
 								</a>
@@ -54,13 +54,13 @@
 							</div>
 						</div>
 						<div class="work-contains">
-							<div class="items">
+						<div id="code-nav" class="items sub-items">
 								<a href="#code">
 									<img class="off" src="images/code_img_off.png">
 									<img class="on" src="images/code_img.png">
 								</a>
 							</div>
-							<div class="items">
+							<div id="design-nav" class="items sub-items">
 								<a href="#design">
 									<img class="off" src="images/design_img_off.png">
 									<img class="on" src="images/design_img.png">
@@ -85,7 +85,9 @@
 					These are my passions, but what are passions if we don’t try and share them with the world… Throughout my schooling journey and beyond, I have always chosen 
 					to <b>teach what I have learnt</b> as best as I could to those willing to learn. As the <b>tutoring chair</b> for both <b>Tau Beta Pi</b> and 
 					<b>Upsilon Pi Epsilon</b> I wish to help those struggling in engineering and computer science find the same love and passion as I have for the field.<br>
-					If you have reached the end of this brief description of me as a person, then I assume you are interested in working with me or meeting me. If so feel free to explore my work and resume, browse my publicly available notes, and reach out to me through any of my social profiles so that we can do great things together!
+					If you have reached the end of this brief description of me as a person, then I assume you are interested in working with me or meeting me. If so feel 
+					free to explore <a id="goto" href="#work" onclick="changeContent(event)">my work</a> and <a href="../Jahan Kuruvilla Cherian Resume.pdf" target="_blank">resume</a>, 
+					browse my publicly available notes, and reach out to me through any of my social profiles so that we can do great things together!
 					</p>
 				</div>
 				<div id="work" class="work">
@@ -138,6 +140,37 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div id="notes" class="notes">
+					<div class="notes-text">
+						<p> This is where some information about my notes goes </p>
+					</div>
+					<div class="projects row">
+						<div class="project-container">
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Computer Architecture </h5>
+								<div class="projectContent">
+									<a href="http://goo.gl/A7YkST" target="_blank"><img src="images/cs33.png" alt="Computer Science 33 Notes"></a>
+								</div>
+								<p class="description"> These are some notes from Week 7 onwards for the final of CS 33 </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Software Construction Lab </h5>
+								<div class="projectContent">
+									<a href="http://goo.gl/fxU7P0" target="_blank"><img src="images/cs35L.png" alt="Computer Science 35L Notes"></a>
+								</div>
+								<p class="description"> These are a quarter worth of notes from Lauren Samy's version of CS 35L </p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4 projectCell">
+								<h5 class="projectCell"> Operating Systems Principles</h5>
+								<div class="projectContent">
+									<a href="http://goo.gl/VQ6ST1" target="_blank"><img src="images/cs111.png" alt="Computer Science 111 Notes"></a>
+								</div>
+								<p class="description"> These are a quarter worth of notes from Mark Kampe's teaching of CS 111 </p>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 			<div class="footer-wrapper">

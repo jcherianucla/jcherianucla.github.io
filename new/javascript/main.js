@@ -26,16 +26,18 @@ function changeContent(event){
 		var temp_elem = nav_elem_list[i];
 		select(temp_elem, false);
 	}
+	select($('.sub-items').children().first(), true);
 	var target = event.target;
 	console.log(target);
-	select(target, true);
 	hideAllContent();
+	select(target, true);
 	var content_list = $('.main-content').children();
 	for(var i = 0; i < content_list.length; i++){
 		if(target.hash === ("#"+content_list[i].id)){
 			determineContent(content_list[i], false);
 		}
 		if(target.hash === "#work"){
+			select($(nav_elem_list[1]), true);
 			$('.work-contains').fadeIn();
 		} else {
 			$('.work-contains').hide();
@@ -47,6 +49,7 @@ $(document).ready(function () {
 	$('.on').hide();
 	hideAllContent();
 	$('.about').show();
+	select($('.sub-items').children().first(), true);
 	$('.work-contains').hide();
 	var active = $('.items').children().first();
 	select(active, true);
