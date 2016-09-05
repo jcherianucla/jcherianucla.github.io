@@ -156,7 +156,38 @@ html, body {
   font-size: 14px;
   line-height: 1.8;
 }
-/* line 142, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
+.container .main-content .work .project-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+/* line 145, ../sass/main.scss */
+.container .main-content .work .project-info .cancel {
+  cursor: pointer;
+  align-self: flex-end;
+}
+/* line 148, ../sass/main.scss */
+.container .main-content .work .project-info .cancel img {
+  width: 30px;
+}
+/* line 154, ../sass/main.scss */
+.container .main-content .work .project-info .project-info-container .project-media img {
+  width: 70%;
+  height: 90%;
+}
+/* line 159, ../sass/main.scss */
+.container .main-content .work .project-info .project-info-container .project-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* line 164, ../sass/main.scss */
+.container .main-content .work .project-info .project-info-container .project-details {
+  align-self: flex-start;
+  text-align: start;
+}
+/* line 171, ../sass/main.scss */
 .container .main-content .notes {
   height: 100%;
   width: 80%;
@@ -167,23 +198,23 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 151, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .container .main-content .notes .projectCell {
   font-weight: bold;
   font-size: large;
 }
-/* line 156, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .container .main-content .notes .projectContent img {
   width: 200px;
   height: 200px;
 }
-/* line 161, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .container .main-content .notes .description {
   font-weight: lighter;
   font-size: 14px;
   line-height: 1.7em;
 }
-/* line 168, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -191,7 +222,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 174, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -201,7 +232,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 182, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -209,13 +240,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 188, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 192, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;

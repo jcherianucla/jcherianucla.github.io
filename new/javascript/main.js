@@ -45,8 +45,24 @@ function changeContent(event){
 	}
 
 };
+function cancel(event) {
+	$('.project-info').hide();
+	$('.projects').fadeIn();
+};
+function showDetail(event){
+	var detailsList = $('.project-info');
+	var target = event.target;
+	console.log(detailsList);
+	console.log(target);
+	$('.projects').hide();
+	$('.project-info').fadeIn();
+	for(var i = 0; i < detailsList.length; i++){
+		
+	}
+};
 $(document).ready(function () {
 	$('.on').hide();
+	$('.project-info').hide();
 	hideAllContent();
 	$('.about').show();
 	select($('.sub-items').children().first(), true);
