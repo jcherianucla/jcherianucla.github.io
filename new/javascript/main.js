@@ -28,7 +28,6 @@ function changeContent(event){
 	}
 	select($('.sub-items').children().first(), true);
 	var target = event.target;
-	console.log(target);
 	hideAllContent();
 	select(target, true);
 	var content_list = $('.main-content').children();
@@ -40,6 +39,8 @@ function changeContent(event){
 			select($(nav_elem_list[1]), true);
 			$('.work-contains').fadeIn();
 		} else {
+			$('.project-info').hide();
+			$('.projects').show();
 			$('.work-contains').hide();
 		}
 	}
@@ -50,14 +51,18 @@ function cancel(event) {
 	$('.projects').fadeIn();
 };
 function showDetail(event){
-	var detailsList = $('.project-info');
+	var detailsList = $('.project-info').children().slice(1);
 	var target = event.target;
-	console.log(detailsList);
-	console.log(target);
+	console.log(target.alt);
 	$('.projects').hide();
 	$('.project-info').fadeIn();
 	for(var i = 0; i < detailsList.length; i++){
-		
+	  var title_text = $(detailsList[i]).children().find('h3').text();
+		if(target.alt === title_text) {
+			$(detailsList[i]).children().show();
+		} else {
+			$(detailsList[i]).children().hide();
+		}
 	}
 };
 $(document).ready(function () {

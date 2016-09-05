@@ -109,6 +109,9 @@ html, body {
 			justify-content: center;
 			align-items: center;
 			text-align: center;
+			.work-text {
+				text-align: start;
+			}
 			.projects{
 				display: block;
 				align-self: flex-start;
@@ -176,6 +179,9 @@ html, body {
 			display: flex;
 			flex-flow: column;
 			align-items: center;
+			.notes-text {
+				text-align: start;
+			}
 			text-align: center;
 			.projectCell{
 				font-weight: bold;
