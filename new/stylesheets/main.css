@@ -91,26 +91,27 @@ html, body {
 }
 /* line 80, ../sass/main.scss */
 .container .upper-nav .nav-container .nav-bar .work-contains .items img {
+  pointer-events: none;
   display: block;
   margin: auto;
   height: 30%;
   width: 45%;
 }
-/* line 91, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .container .main-content {
   display: flex;
   position: relative;
   justify-content: center;
   line-height: 1.7em;
 }
-/* line 96, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .container .main-content .about {
   height: 100%;
   width: 80%;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 102, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .container .main-content .work {
   height: 100%;
   width: 80%;
@@ -122,34 +123,34 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 112, ../sass/main.scss */
-.container .main-content .work .work-text {
+/* line 114, ../sass/main.scss */
+.container .main-content .work .code .work-text {
   text-align: start;
 }
-/* line 115, ../sass/main.scss */
-.container .main-content .work .projects {
+/* line 117, ../sass/main.scss */
+.container .main-content .work .code .projects {
   display: block;
   align-self: flex-start;
 }
-/* line 118, ../sass/main.scss */
-.container .main-content .work .projects .project-container {
+/* line 120, ../sass/main.scss */
+.container .main-content .work .code .projects .project-container {
   display: table;
   content: " ";
 }
-/* line 121, ../sass/main.scss */
-.container .main-content .work .projects .project-container .projectCell {
+/* line 123, ../sass/main.scss */
+.container .main-content .work .code .projects .project-container .projectCell {
   cursor: pointer;
   font-weight: bold;
   font-size: large;
   padding: 10px;
   transition: .2s ease-in-out;
 }
-/* line 127, ../sass/main.scss */
-.container .main-content .work .projects .project-container .projectCell .projectContent:hover {
+/* line 129, ../sass/main.scss */
+.container .main-content .work .code .projects .project-container .projectCell .projectContent:hover {
   transform: scale(1.1);
 }
-/* line 131, ../sass/main.scss */
-.container .main-content .work .projects .project-container .description {
+/* line 133, ../sass/main.scss */
+.container .main-content .work .code .projects .project-container .description {
   width: 80%;
   text-align: center;
   margin: auto;
@@ -160,38 +161,76 @@ html, body {
   font-size: 14px;
   line-height: 1.8;
 }
-/* line 144, ../sass/main.scss */
-.container .main-content .work .project-info {
+/* line 146, ../sass/main.scss */
+.container .main-content .work .code .project-info {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-/* line 148, ../sass/main.scss */
-.container .main-content .work .project-info .cancel {
+/* line 150, ../sass/main.scss */
+.container .main-content .work .code .project-info .cancel {
   cursor: pointer;
   align-self: flex-end;
 }
-/* line 151, ../sass/main.scss */
-.container .main-content .work .project-info .cancel img {
+/* line 153, ../sass/main.scss */
+.container .main-content .work .code .project-info .cancel img {
   width: 30px;
 }
-/* line 157, ../sass/main.scss */
-.container .main-content .work .project-info .project-info-container .project-media img {
+/* line 159, ../sass/main.scss */
+.container .main-content .work .code .project-info .project-info-container .project-media img {
   width: 70%;
   height: 90%;
 }
-/* line 162, ../sass/main.scss */
-.container .main-content .work .project-info .project-info-container .project-title {
+/* line 164, ../sass/main.scss */
+.container .main-content .work .code .project-info .project-info-container .project-title {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
 }
-/* line 167, ../sass/main.scss */
-.container .main-content .work .project-info .project-info-container .project-details {
+/* line 169, ../sass/main.scss */
+.container .main-content .work .code .project-info .project-info-container .project-details {
   align-self: flex-start;
   text-align: start;
 }
-/* line 174, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
+.container .main-content .work .design .design-text {
+  text-align: start;
+}
+/* line 180, ../sass/main.scss */
+.container .main-content .work .design .projects {
+  display: block;
+  align-self: flex-start;
+}
+/* line 183, ../sass/main.scss */
+.container .main-content .work .design .projects .project-container {
+  display: table;
+  content: " ";
+}
+/* line 186, ../sass/main.scss */
+.container .main-content .work .design .projects .project-container .projectCell {
+  font-weight: bold;
+  font-size: large;
+  padding: 10px;
+  width: 50%;
+  transition: .2s ease-in-out;
+}
+/* line 193, ../sass/main.scss */
+.container .main-content .work .design .projects .project-container h5 {
+  width: 100% !important;
+}
+/* line 196, ../sass/main.scss */
+.container .main-content .work .design .projects .project-container .description {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 10px;
+  color: #444;
+  margin-top: 10px;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 1.8;
+}
+/* line 211, ../sass/main.scss */
 .container .main-content .notes {
   height: 100%;
   width: 80%;
@@ -202,27 +241,27 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 182, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 .container .main-content .notes .notes-text {
   text-align: start;
 }
-/* line 186, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .container .main-content .notes .projectCell {
   font-weight: bold;
   font-size: large;
 }
-/* line 191, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 .container .main-content .notes .projectContent img {
   width: 200px;
   height: 200px;
 }
-/* line 196, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .container .main-content .notes .description {
   font-weight: lighter;
   font-size: 14px;
   line-height: 1.7em;
 }
-/* line 203, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -230,7 +269,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 209, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -240,7 +279,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 217, ../sass/main.scss */
+/* line 254, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -248,13 +287,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 223, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 227, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;

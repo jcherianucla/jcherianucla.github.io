@@ -44,7 +44,23 @@ function changeContent(event){
 			$('.work-contains').hide();
 		}
 	}
-
+};
+function switchWorkContent(event) {
+	sub_items = $('.sub-items').children();
+	var target = event.target;
+	select(target, true);
+	console.log(target.hash);
+	if(target.hash === sub_items[0].hash){
+		$('.design').hide();
+		$('.code').fadeIn();
+		select(sub_items[0], true);
+		select(sub_items[1], false);	
+	} else {
+		$('.code').hide();
+		$('.design').fadeIn();
+		select(sub_items[1], true);
+		select(sub_items[0], false);	
+	}
 };
 function cancel(event) {
 	$('.project-info').hide();
@@ -53,7 +69,6 @@ function cancel(event) {
 function showDetail(event){
 	var detailsList = $('.project-info').children().slice(1);
 	var target = event.target;
-	console.log(target.alt);
 	$('.projects').hide();
 	$('.project-info').fadeIn();
 	for(var i = 0; i < detailsList.length; i++){
@@ -70,6 +85,7 @@ $(document).ready(function () {
 	$('.project-info').hide();
 	hideAllContent();
 	$('.about').show();
+	$('.design').hide();
 	select($('.sub-items').children().first(), true);
 	$('.work-contains').hide();
 	var active = $('.items').children().first();
