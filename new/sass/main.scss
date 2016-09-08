@@ -101,10 +101,10 @@ html, body {
 			padding-bottom: 30px;
 		}
 		.work {
-			height: 100%;
-			width: 80%;
 			padding-top: 30px;
 			padding-bottom: 30px;
+			height: 100%;
+			width: 80%;
 			display: flex;
 			flex-flow: column;
 			justify-content: center;
@@ -174,7 +174,7 @@ html, body {
 				}
 			}
 			.design {
-				.design-text {
+				.design-text{
 					text-align: start;
 				}
 				.projects{
@@ -187,11 +187,16 @@ html, body {
 							font-weight: bold;
 							font-size: large;
 							padding: 10px;
-							width: 50%;
 							transition: .2s ease-in-out;
-						}
-						h5 {
-							width: 100% !important;
+							.projectContent:hover {
+								transform: scale(1.1);
+							}
+							.projectContent {
+								img {
+									width: 200px;
+									height: 200px;
+								}
+							}
 						}
 						.description {
 							width: 80%;

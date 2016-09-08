@@ -38,6 +38,8 @@ function changeContent(event){
 		if(target.hash === "#work"){
 			select($(nav_elem_list[1]), true);
 			$('.work-contains').fadeIn();
+			$('.code').show();
+			$('.design').hide();
 		} else {
 			$('.project-info').hide();
 			$('.projects').show();
