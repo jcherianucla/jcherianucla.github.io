@@ -185,14 +185,10 @@ html, body {
 							font-weight: bold;
 							font-size: large;
 							padding: 10px;
-							transition: .2s ease-in-out;
-							.projectContent:hover {
-								transform: scale(1.1);
-							}
-							.projectContent {
-								img {
-									width: 200px;
-									height: 200px;
+							.projectContent{
+								img{
+									max-width: 400px;
+									max-height: 500px;
 								}
 							}
 						}

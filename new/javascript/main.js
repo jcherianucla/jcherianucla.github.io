@@ -20,12 +20,23 @@ function select(elem, sel){
 		$(elem).children('.off').show();
 	}
 };
-function changeContent(event){
+function hideNav(){
 	var nav_elem_list = $('.items').children();
 	for(var i = 0; i < nav_elem_list.length; i++){
 		var temp_elem = nav_elem_list[i];
 		select(temp_elem, false);
 	}
+};
+function goHome(event){
+	hideNav();
+	$('.work-contains').hide();
+	hideAllContent();
+	select($('.items').children().first(), true);
+	$('.about').fadeIn();
+};
+function changeContent(event){
+	hideNav();
+	var nav_elem_list = $('.items').children();
 	select($('.sub-items').children().first(), true);
 	var target = event.target;
 	hideAllContent();
