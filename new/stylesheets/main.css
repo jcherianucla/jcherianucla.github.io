@@ -265,7 +265,57 @@ html, body {
   font-size: 14px;
   line-height: 1.7em;
 }
-/* line 245, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
+.container .main-content .contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+}
+/* line 250, ../sass/main.scss */
+.container .main-content .contact .contact-box {
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+/* line 255, ../sass/main.scss */
+.container .main-content .contact .contact-box #contact-form {
+  width: 100%;
+}
+/* line 257, ../sass/main.scss */
+.container .main-content .contact .contact-box #contact-form input {
+  margin-bottom: 50px;
+  width: 40%;
+  border: none;
+  border-bottom: 1px solid #e6e9eb;
+  display: block;
+  padding-bottom: 10px;
+}
+/* line 266, ../sass/main.scss */
+.container .main-content .contact .contact-box #contact-form textarea {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #e6e9eb;
+  width: 90%;
+  height: 100px;
+}
+/* line 273, ../sass/main.scss */
+.container .main-content .contact .contact-box #contact-form #btn {
+  width: 150px;
+  align-self: center;
+}
+/* line 277, ../sass/main.scss */
+.container .main-content .contact .contact-box #contact-form input:focus,
+.container .main-content .contact .contact-box #contact-form textarea:focus {
+  outline: none;
+}
+/* line 283, ../sass/main.scss */
+.container .main-content .contact .contact-info {
+  width: 30%;
+}
+/* line 288, ../sass/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -273,7 +323,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 251, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -283,7 +333,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 259, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -291,13 +341,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 265, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 269, ../sass/main.scss */
+/* line 312, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;

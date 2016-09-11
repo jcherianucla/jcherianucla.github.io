@@ -241,6 +241,49 @@ html, body {
 				line-height: 1.7em;
 			}
 		}
+		.contact{
+			padding-top: 30px;
+			padding-bottom: 30px;
+			width: 80%;
+			display: flex;
+			flex-flow: row;
+			.contact-box {
+				width: 70%;
+				display: flex;
+				flex-flow: column;
+				align-items: flex-start;
+				#contact-form {
+					width: 100%;
+					input{
+						//margin: 5px 0 5px 0;
+						margin-bottom: 50px;
+						width: 40%;
+						border: none;
+						border-bottom: 1px solid #e6e9eb;
+						display: block;
+						padding-bottom: 10px;
+					}
+					textarea{
+						margin-bottom: 20px;
+						border: none;
+						border-bottom: 1px solid #e6e9eb;
+						width: 90%;
+						height: 100px;
+					}
+					#btn {
+						width: 150px;
+						align-self: center;
+					}
+					input:focus,
+					textarea:focus{
+						outline: none;
+					}
+				}
+			}
+			.contact-info {
+				width: 30%;
+			}
+		}
 	}
 	.footer-wrapper{
 		margin-top: auto;

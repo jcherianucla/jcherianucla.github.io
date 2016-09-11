@@ -344,10 +344,27 @@
 						</div>
 					</div>
 				</div>
-				<div id="contact" class="contact" style="width:100%;">
-					<!-- Change the width and height values to suit you best -->
-					<div class="typeform-widget" data-url="https://jahan4.typeform.com/to/z52fbB" data-text="Website Contact" style=" padding-top: -300px; width:100%;height:500px;"></div>
-					<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+				<div id="contact" class="contact">
+					<div class="contact-box">
+						<form id="contact-form" action="https://formspree.io/jcherian@g.ucla.edu" method="POST">
+							<fieldset>
+								<input type="text" name="name" placeholder="Name"/>
+								<input type="text" name="email" placeholder="Email"/>
+								<input type="text" name="_gotcha" style="display: none"/>
+								<textarea name="Message" placeholder="Enter your message here..."></textarea>
+							</fieldset>
+							<fieldset>
+								<input class="btn" type="submit" value="Get in Touch"/>
+							</fieldset>
+						</form>
+					</div>
+					<div class="contact-info">
+						<p> Feel free to send me a message if you have any questions about my experience and <a id="goto" href="#work" onclick="changeContent(event)">work</a>,
+						or if you simply need a freelancer specializing in <b>iOS Development</b> and some <b> design</b>.
+						You can also contact me should you feel my <a id="goto" href="#notes" onclick="changeContent(event)">notes</a> are lacking material or are factually incorrect!
+						If you want a more personal connection point, you can always visit any of my social media as listed at 
+						the bottom of this page. I look forward to hearing from you! </p>
+					</div>
 				</div>
 			</div>
 			<div class="footer-wrapper">
