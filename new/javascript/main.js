@@ -3,9 +3,6 @@ var videos = ["https://www.youtube.com/embed/26U_seo0a1g", "https://www.youtube.
 "https://www.youtube.com/embed/Ps4hAQ_Fp5k", "https://www.youtube.com/embed/cZjtRQMEOmI","https://www.youtube.com/embed/WDf757QwXpk","https://www.youtube.com/embed/CMm6tDavSXg",
 "https://www.youtube.com/embed/ZOy0YgUDwDg", "https://www.youtube.com/embed/K-4A1hi-DuA", "https://www.youtube.com/embed/g-jwWYX7Jlo", "https://www.youtube.com/embed/mgmVOuLgFB0",
 "https://www.youtube.com/embed/TNRldP18bH8", "https://www.youtube.com/embed/dRl8EIhrQjQ", "https://www.youtube.com/embed/q0qD2K2RWkc", "https://www.youtube.com/embed/itvnQ2QB4yc"]
-function cycleVideos(index){
-	$('#vidFrame').attr("src", videos[index]);
-}
 function determineContent(elem, should_hide){
 	if(should_hide){
 		$(elem).hide();
@@ -27,6 +24,10 @@ function select(elem, sel){
 		$(elem).children('.on').hide();
 		$(elem).children('.off').show();
 	}
+};
+function cycleVideos(index){
+	select($('.contains').children().children().last(),true);
+	$('#vidFrame').attr("src", videos[index]);
 };
 function hideNav(){
 	var nav_elem_list = $('.items').children();
