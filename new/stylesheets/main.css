@@ -217,7 +217,6 @@ html, body {
 }
 /* line 195, ../sass/main.scss */
 .container .main-content .work .design .projects .project-container .description {
-  width: 80%;
   text-align: center;
   margin: auto;
   padding-bottom: 10px;
@@ -227,7 +226,7 @@ html, body {
   font-size: 14px;
   line-height: 1.8;
 }
-/* line 210, ../sass/main.scss */
+/* line 209, ../sass/main.scss */
 .container .main-content .notes {
   height: 100%;
   width: 80%;
@@ -238,27 +237,27 @@ html, body {
   align-items: center;
   text-align: center;
 }
-/* line 218, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .container .main-content .notes .notes-text {
   text-align: start;
 }
-/* line 222, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .container .main-content .notes .projectCell {
   font-weight: bold;
   font-size: large;
 }
-/* line 227, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .container .main-content .notes .projectContent img {
   width: 200px;
   height: 200px;
 }
-/* line 232, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 .container .main-content .notes .description {
   font-weight: lighter;
   font-size: 14px;
   line-height: 1.7em;
 }
-/* line 238, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .container .main-content .contact {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -266,18 +265,18 @@ html, body {
   display: flex;
   flex-flow: row;
 }
-/* line 244, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 .container .main-content .contact .contact-box {
   width: 70%;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
 }
-/* line 249, ../sass/main.scss */
+/* line 248, ../sass/main.scss */
 .container .main-content .contact .contact-box #contact-form {
   width: 100%;
 }
-/* line 251, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .container .main-content .contact .contact-box #contact-form input {
   margin-bottom: 50px;
   width: 40%;
@@ -286,7 +285,7 @@ html, body {
   display: block;
   padding-bottom: 10px;
 }
-/* line 259, ../sass/main.scss */
+/* line 258, ../sass/main.scss */
 .container .main-content .contact .contact-box #contact-form textarea {
   margin-bottom: 20px;
   border: none;
@@ -294,21 +293,21 @@ html, body {
   width: 90%;
   height: 100px;
 }
-/* line 266, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 .container .main-content .contact .contact-box #contact-form #btn {
   width: 150px;
   align-self: center;
 }
-/* line 270, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 .container .main-content .contact .contact-box #contact-form input:focus,
 .container .main-content .contact .contact-box #contact-form textarea:focus {
   outline: none;
 }
-/* line 276, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 .container .main-content .contact .contact-info {
   width: 30%;
 }
-/* line 281, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -316,7 +315,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 287, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -326,7 +325,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 295, ../sass/main.scss */
+/* line 294, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -334,13 +333,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 301, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 305, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;
