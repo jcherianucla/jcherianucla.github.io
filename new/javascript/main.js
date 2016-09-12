@@ -1,3 +1,11 @@
+var videos = ["https://www.youtube.com/embed/26U_seo0a1g", "https://www.youtube.com/embed/z1PSbDmV8Gw","https://www.youtube.com/embed/UNQhuFL6CWg",
+"https://www.youtube.com/embed/ja-n5qUNRi8", "https://www.youtube.com/embed/H1sXTmaqRHU","https://www.youtube.com/embed/Cz3q1R0oHmE", "https://www.youtube.com/embed/xHZ7BFBoYCQ",
+"https://www.youtube.com/embed/Ps4hAQ_Fp5k", "https://www.youtube.com/embed/cZjtRQMEOmI","https://www.youtube.com/embed/WDf757QwXpk","https://www.youtube.com/embed/CMm6tDavSXg",
+"https://www.youtube.com/embed/ZOy0YgUDwDg", "https://www.youtube.com/embed/K-4A1hi-DuA", "https://www.youtube.com/embed/g-jwWYX7Jlo", "https://www.youtube.com/embed/mgmVOuLgFB0",
+"https://www.youtube.com/embed/TNRldP18bH8", "https://www.youtube.com/embed/dRl8EIhrQjQ", "https://www.youtube.com/embed/q0qD2K2RWkc", "https://www.youtube.com/embed/itvnQ2QB4yc"]
+function cycleVideos(index){
+	$('#vidFrame').attr("src", videos[index]);
+}
 function determineContent(elem, should_hide){
 	if(should_hide){
 		$(elem).hide();
@@ -45,6 +53,10 @@ function changeContent(event){
 	for(var i = 0; i < content_list.length; i++){
 		if(target.hash === ("#"+content_list[i].id)){
 			determineContent(content_list[i], false);
+		}
+		if(target.hash === "#foryou"){
+			var idx = Math.floor((Math.random() * videos.length));
+			cycleVideos(idx);
 		}
 		if(target.hash === "#work"){
 			select($(nav_elem_list[1]), true);

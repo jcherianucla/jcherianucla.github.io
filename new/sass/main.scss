@@ -193,7 +193,7 @@ html, body {
 							}
 						}
 						.description {
-							text-align: center;
+							text-align: start;
 							margin: auto;
 							padding-bottom: 10px;
 							color: #444;
@@ -274,6 +274,20 @@ html, body {
 			}
 			.contact-info {
 				width: 30%;
+			}
+		}
+		.foryou {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			width: 80%;
+			display: flex;
+			flex-flow: column;
+			.foryou-text {
+				align-self: flex-start;
+				padding-bottom: 20px;
+			}
+			.foryou-content {
+				align-self: center;
 			}
 		}
 	}

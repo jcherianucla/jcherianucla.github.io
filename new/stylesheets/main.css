@@ -217,7 +217,7 @@ html, body {
 }
 /* line 195, ../sass/main.scss */
 .container .main-content .work .design .projects .project-container .description {
-  text-align: center;
+  text-align: start;
   margin: auto;
   padding-bottom: 10px;
   color: #444;
@@ -307,7 +307,24 @@ html, body {
 .container .main-content .contact .contact-info {
   width: 30%;
 }
-/* line 280, ../sass/main.scss */
+/* line 279, ../sass/main.scss */
+.container .main-content .foryou {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+}
+/* line 285, ../sass/main.scss */
+.container .main-content .foryou .foryou-text {
+  align-self: flex-start;
+  padding-bottom: 20px;
+}
+/* line 289, ../sass/main.scss */
+.container .main-content .foryou .foryou-content {
+  align-self: center;
+}
+/* line 294, ../sass/main.scss */
 .container .footer-wrapper {
   margin-top: auto;
   position: relative;
@@ -315,7 +332,7 @@ html, body {
   height: 80px;
   bottom: 0;
 }
-/* line 286, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 .container .footer-wrapper .footer {
   position: absolute;
   height: 80px;
@@ -325,7 +342,7 @@ html, body {
   background: white;
   justify-content: center;
 }
-/* line 294, ../sass/main.scss */
+/* line 308, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container {
   display: flex;
   height: 80px;
@@ -333,13 +350,13 @@ html, body {
   flex-flow: row;
   border-top: 1px solid #e6e9eb;
 }
-/* line 300, ../sass/main.scss */
+/* line 314, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-/* line 304, ../sass/main.scss */
+/* line 318, ../sass/main.scss */
 .container .footer-wrapper .footer .social-container .icons img {
   display: block;
   margin: auto;
