@@ -91,7 +91,10 @@ html, body {
 						}
 					}
 				}
+				}
 				@media all and (max-width:500px){
+					.nav-bar{
+						flex-direction: row;
 					.contains{
 						flex-direction:column;
 						img{
@@ -99,10 +102,10 @@ html, body {
 						}
 					}
 						.toggle{
-							align-self: flex-end;
 							display: block !important;
 						}
 					.work-contains{
+						flex-flow: column;
 						margin-right: 9vw;
 						justify-content: space-between;
 						align-items: center;
@@ -388,6 +391,9 @@ html, body {
 						width: 40%;
 					}
 				}
+			}
+			.made-with{
+				text-align: center;
 			}
 		}
 	}
