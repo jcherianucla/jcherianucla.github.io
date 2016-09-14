@@ -119,7 +119,6 @@ html, body {
   /* line 105, ../sass/main.scss */
   .container .upper-nav .nav-container .nav-bar .work-contains {
     margin: 0;
-    flex-direction: column;
     align-items: center;
   }
   /* line 109, ../sass/main.scss */

@@ -71,11 +71,16 @@ function changeContent(event){
 		}
 	}
 	if($(window).width() <= 500){
-		for(var i = 0; i < nav_elem_list.length; i++){
+		$('.active').removeClass("active");
+		$(target).addClass("active");
+		for(var i = 0; i < nav_elem_list.length-2; i++){
 			if( nav_elem_list[i] != target){
 				$(nav_elem_list[i]).hide();
 			}
 		}
+		$('#nav')[0].src = "images/hamburger.png";
+		$('#nav')[0].alt = "Hamburger";
+		if(target.hash === "#work"){ $('.work-contains').show();}
 	}
 
 };
@@ -106,7 +111,7 @@ function showDetail(event){
 	$('.projects').hide();
 	$('.project-info').fadeIn();
 	for(var i = 0; i < detailsList.length; i++){
-	  var title_text = $(detailsList[i]).children().find('h3').text();
+		var title_text = $(detailsList[i]).children().find('h3').text();
 		if(target.alt === title_text) {
 			$(detailsList[i]).children().show();
 		} else {
@@ -116,14 +121,27 @@ function showDetail(event){
 };
 function showAll(event){
 	var showNav = $('.items').children().slice(0, -2);
-	for(var i = 0; i < showNav.length; i++){
-		$(showNav).show();
+	if($('#nav')[0].alt === "Hamburger"){
+		for(var i = 0; i < showNav.length; i++){
+			$(showNav).show();
+		}
+		$('#nav')[0].src = "images/x.png";
+		$('#nav')[0].alt = "Cross";
+	} else {
+		for(var i = 0; i < showNav.length; i++){
+			$(showNav[i]).hide();
+		}
+		$(".active").show();
+		$('#nav')[0].src = "images/hamburger.png";
+		$('#nav')[0].alt = "Hamburger";
 	}
+
 };
 $(document).ready(function () {
 	if($(window).width() <=500){
 		var nav_elem_list = $('.items').children();
-		for(var i = 1; i < nav_elem_list.length; i++){
+		$(nav_elem_list[0]).first().addClass("active");
+		for(var i = 1; i < nav_elem_list.length - 2; i++){
 			$(nav_elem_list[i]).hide();
 		}
 	}
