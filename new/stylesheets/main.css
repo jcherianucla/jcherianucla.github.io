@@ -118,7 +118,8 @@ html, body {
   }
   /* line 105, ../sass/main.scss */
   .container .upper-nav .nav-container .nav-bar .work-contains {
-    margin: 0;
+    margin-right: 9vw;
+    justify-content: space-between;
     align-items: center;
   }
   /* line 109, ../sass/main.scss */
