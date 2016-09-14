@@ -98,6 +98,10 @@ html, body {
 							width: 50px !important;
 						}
 					}
+						.toggle{
+							align-self: flex-end;
+							display: block !important;
+						}
 					.work-contains{
 						margin: 0;
 						flex-direction: column;
@@ -106,22 +110,6 @@ html, body {
 							width: 50px !important;
 						}
 					}
-				}
-				.mobile-nav{
-					width: 100%;
-					display: flex;
-					.toggle {
-						align-self: flex-end;
-						img{
-							width:30px;
-						}
-					}
-					.active{
-						img{
-							width:70px;
-						}
-					}
-
 				}
 			}
 		}

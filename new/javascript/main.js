@@ -70,6 +70,14 @@ function changeContent(event){
 			$('.work-contains').hide();
 		}
 	}
+	if($(window).width() <= 500){
+		for(var i = 0; i < nav_elem_list.length; i++){
+			if( nav_elem_list[i] != target){
+				$(nav_elem_list[i]).hide();
+			}
+		}
+	}
+
 };
 function switchWorkContent(event) {
 	sub_items = $('.sub-items').children();
@@ -106,7 +114,19 @@ function showDetail(event){
 		}
 	}
 };
+function showAll(event){
+	var showNav = $('.items').children().slice(0, -2);
+	for(var i = 0; i < showNav.length; i++){
+		$(showNav).show();
+	}
+};
 $(document).ready(function () {
+	if($(window).width() <=500){
+		var nav_elem_list = $('.items').children();
+		for(var i = 1; i < nav_elem_list.length; i++){
+			$(nav_elem_list[i]).hide();
+		}
+	}
 	$('.on').hide();
 	$('.project-info').hide();
 	hideAllContent();
@@ -118,4 +138,3 @@ $(document).ready(function () {
 	select(active, true);
 
 });
-
